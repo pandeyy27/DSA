@@ -11,8 +11,8 @@ class maxAndMin {
         int n = sc.nextInt();
 
         int arr[] = new int[n];
-        int max = arr[0];
-        int min = arr[0];
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
 
         System.out.println("Enter " + n + " elements");
         for (int i = 0; i < arr.length; i++) {
@@ -26,7 +26,7 @@ class maxAndMin {
             }
         }
 
-        System.out.println("The maximum number is:" + max);
+        System.out.println("The maximum number is: " + max);
         System.out.println("The minimum number is: " + min);
 
         sc.close();
