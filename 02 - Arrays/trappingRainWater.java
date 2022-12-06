@@ -1,4 +1,6 @@
 // Implementation Using Two Pointers
+// Time Complexity: O(N)
+// Auxiliary Space: O(1) 
 
 class trappingRainWater {
 
