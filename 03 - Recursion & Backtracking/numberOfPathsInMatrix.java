@@ -1,4 +1,4 @@
-// WAP to find the numnber of paths in an nxm matrix
+// WAP to find the number of paths in an nxm matrix
 
 public class numberOfPathsInMatrix {
     static int output(int n, int m) {
