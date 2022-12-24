@@ -1,3 +1,5 @@
+// Josephus Problem
+
 public class josephusProblem {
     static int josephus(int n, int k) {
         if (n == 1)
