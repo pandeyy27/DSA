@@ -2,16 +2,16 @@
 
 class greatestElementOnRight {
     static void output(int arr[], int n) {
-        int greatest = -1;
 
+        int gtr = -1;
+        int temp = 0;
+        
         for (int i = n - 1; i >= 0; i--) {
-            int temp = arr[i];
-            arr[i] = greatest;
-
-            if (temp > greatest) {
-                greatest = temp;
-            }
+            temp = arr[i];
+            arr[i] = gtr;
+            gtr = Math.max(gtr, temp);
         }
+
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
