@@ -12,6 +12,15 @@ class consecutive1s {
                 count++;
                 res = Math.max(res, count);
             }
+            // Same function:
+            // if (a[i] == 1)
+            // count++;
+            // else {
+            // if (count > res) {
+            // res = count;
+            // }
+            // count = 0;
+            // }
         }
         System.out.println(res);
     }
