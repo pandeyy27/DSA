@@ -25,8 +25,6 @@ public class leftRotate {
     public static void main(String[] args) {
         int a[] = { 1, 2, 3, 4, 5, 6, 7 };
         rotate(a, 3);
-        reverse(a, 0, a.length - 1);
-        reverse(a, 0, a.length - 1);
         System.out.println(Arrays.toString(a));
     }
 }
