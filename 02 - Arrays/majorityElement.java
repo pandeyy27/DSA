@@ -6,26 +6,26 @@
 public class majorityElement {
     static int output(int a[]) {
         int n = a.length;
-        int count = 1, res = 0;
+        int count = 1;
+        int ansIndex = 0;
 
         // Step 1:
         for (int i = 1; i < n; i++) {
-            if (a[res] == a[i]) {
+            if (a[i] == a[ansIndex]) {
                 count++;
             } else {
                 count--;
             }
-
             if (count == 0) {
                 count = 1;
-                res = i;
+                ansIndex = i;
             }
         }
 
         // Step 2:
         count = 0;
         for (int i = 0; i < n; i++) {
-            if (a[res] == a[i]) {
+            if (a[ansIndex] == a[i]) {
                 count++;
             }
         }
@@ -33,7 +33,7 @@ public class majorityElement {
         if (count <= (n / 2)) {
             return -1;
         } else
-            return a[res];
+            return a[ansIndex];
     }
 
     public static void main(String[] args) {
